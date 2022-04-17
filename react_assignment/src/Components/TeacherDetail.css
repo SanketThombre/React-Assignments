@@ -1,0 +1,20 @@
+
+#container{
+    width: 80%;
+    height: 250px;
+    /* border: black 1px solid; */
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    grid-gap: 15px;
+   
+}
+
+#class{
+    /* border: red 1px solid; */
+    border-radius: 10px;
+    background-color:black;
+    color: rgb(60, 218, 218);
+   margin-left : 30px;
+}

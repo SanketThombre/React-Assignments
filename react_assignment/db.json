@@ -1,0 +1,145 @@
+{
+  "teachers": [
+    {
+      "name": "Samuel",
+      "gender": "Male",
+      "age": "35",
+      "classes": [
+        {
+          "section": "A",
+          "grade": "8",
+          "subject": "Maths"
+        },
+        {
+          "section": "B",
+          "grade": "8",
+          "subject": "Science"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Tania",
+      "gender": "Female",
+      "age": "26",
+      "classes": [
+        {
+          "section": "C",
+          "grade": "9",
+          "subject": "History"
+        },
+        {
+          "section": "D",
+          "grade": "9",
+          "subject": "English"
+        },
+        {
+          "section": "D",
+          "grade": "10",
+          "subject": "Maths"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "Pablo",
+      "gender": "Male",
+      "age": "31",
+      "classes": [
+        {
+          "section": "A",
+          "grade": "6",
+          "subject": "Marathi"
+        },
+        {
+          "section": "A",
+          "grade": "8",
+          "subject": "English"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "Chinmay",
+      "gender": "Male",
+      "age": "35",
+      "classes": [
+        {
+          "section": "C",
+          "grade": "9",
+          "subject": "Geography"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "Rahul",
+      "gender": "Male",
+      "age": "38",
+      "classes": [
+        {
+          "section": "C",
+          "grade": "9",
+          "subject": "Geography"
+        },
+        {
+          "section": "B",
+          "grade": "9",
+          "subject": "Biology"
+        },
+        {
+          "section": "B",
+          "grade": "10",
+          "subject": "Biology"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "Harshal",
+      "gender": "Male",
+      "age": "38",
+      "classes": [
+        {
+          "section": "C",
+          "grade": "9",
+          "subject": "Geography"
+        },
+        {
+          "section": "B",
+          "grade": "9",
+          "subject": "Biology"
+        },
+        {
+          "section": "B",
+          "grade": "10",
+          "subject": "Biology"
+        },
+        {
+          "section": "B",
+          "grade": "10",
+          "subject": "Biology"
+        },
+        {
+          "section": "B",
+          "grade": "8",
+          "subject": "English"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "name": "Alia",
+      "gender": "Female",
+      "age": "28",
+      "classes": [
+        {
+          "section": "E",
+          "grade": "7",
+          "subject": "Maths"
+        }
+      ],
+      "id": 7
+    }
+  ]
+}

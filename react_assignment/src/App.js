@@ -1,23 +1,37 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { Routes, Route } from 'react-router-dom';
+import { Login } from "./Components/Login";
+import { Home } from "./Components/Home";
+import { useSelector } from 'react-redux';
+import { PrivateRoute } from './Components/PrivateRoute';
+import { Register } from './Components/Register';
+import { Navbar } from './Components/Navbar';
+import { Teacher } from "./Components/TeacherData"
+import { TeacherDetail } from "./Components/TeacherDetails"
+
+
 function App() {
+
+  const {isauthenticated} = useSelector((state) => state.login)
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Navbar/>
+      <Routes>
+       
+        <Route path="/" element={
+          <PrivateRoute isauthenticated={isauthenticated}>
+            <Home />
+          </PrivateRoute>
+          }></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/signup" element={<Register />}></Route>
+        <Route path="/teacherdata" element={<Teacher />}></Route>
+        <Route path="/teacherdetails/:id" element={<TeacherDetail />}></Route>
+      </Routes>
     </div>
   );
 }
