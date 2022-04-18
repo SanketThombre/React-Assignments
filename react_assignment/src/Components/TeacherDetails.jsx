@@ -12,7 +12,7 @@ export const TeacherDetail = () => {
     const { id } = useParams();
     
     useEffect(() => {
-        axios.get(`http://localhost:8080/teachers/${id}`).then((data) => {
+        axios.get(`https://react-assignments.herokuapp.com/api/teachers/${id}`).then((data) => {
             console.log(data)
             
             setUser([data.data])

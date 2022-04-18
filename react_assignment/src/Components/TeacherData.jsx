@@ -39,7 +39,7 @@ export const Teacher = () => {
 
     const Createdata = () => {
         const payload = { ...state };
-        fetch(" http://localhost:8080/teachers", {
+        fetch(" https://react-assignments.herokuapp.com/api/teachers", {
             method: "POST",
             body: JSON.stringify(payload),
             headers: { "Content-Type": "application/json" }

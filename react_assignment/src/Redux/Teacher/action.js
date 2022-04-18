@@ -14,7 +14,7 @@ export const getTeachererror = () => ({ type: GET_TEACHER_ERROR });
 
 export const getTeacherData = () => (dispatch) => {
     dispatch(getTeacherloading());
-    axios.get("http://localhost:8080/teachers")
+    axios.get("https://react-assignments.herokuapp.com/api/teachers")
         .then((res) => dispatch(getTeacher(res.data)))
         .catch((er) => dispatch(getTeachererror()));
 

@@ -23,7 +23,7 @@ export const Home = () => {
 
     const getData = (page, perPage) => {
        
-        axios.get("http://localhost:8080/teachers", {
+        axios.get("https://react-assignments.herokuapp.com/api/teachers", {
             params: {
                 _page: page,
                 _limit:perPage,
